@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Letter For You ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:linear-gradient(135deg,#fff5f8,#ffe8ef);
+
+font-family:Poppins,sans-serif;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:100vh;
+
+padding:40px;
+
+}
+
+.card{
+
+background:white;
+
+max-width:900px;
+
+padding:50px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+position:relative;
+
+overflow:hidden;
+
+animation:fadeIn 1.5s ease;
+
+}
+
+h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:70px;
+
+color:#e91e63;
+
+text-align:center;
+
+margin-bottom:30px;
+
+}
+
+p{
+
+font-size:19px;
+
+line-height:2;
+
+color:#555;
+
+margin-bottom:18px;
+
+}
+
+.signature{
+
+margin-top:35px;
+
+text-align:right;
+
+font-size:24px;
+
+font-family:'Great Vibes',cursive;
+
+color:#e91e63;
+
+}
+
+button{
+
+display:block;
+
+margin:45px auto 0;
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:40px;
+
+background:#e91e63;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+#finalMessage{
+
+display:none;
+
+text-align:center;
+
+margin-top:40px;
+
+font-size:30px;
+
+font-family:'Great Vibes',cursive;
+
+color:#e91e63;
+
+line-height:1.8;
+
+animation:fadeIn 2s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.heart{
+
+position:fixed;
+
+font-size:24px;
+
+animation:float 8s linear infinite;
+
+opacity:.8;
+
+pointer-events:none;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>To My Gursimran ❤️</h1>
+
+<p>
+If someone had told me back in 2018 that the guy I kept ghosting would one day become the love of my life, I probably would have laughed.
+</p>
+
+<p>
+Thank you for never giving up on me. Thank you for being patient, kind, caring, and for making me feel loved every single day.
+</p>
+
+<p>
+I'll never forget our first date at the lookout, how nervous I was, or the night we got a little drunk at Chicken in the Kitchen and ended up getting ice cream from a gas station. Those moments might seem simple to other people, but to me they're some of the happiest memories of my life.
+</p>
+
+<p>
+Being long-distance hasn't been easy. I miss your hugs, your smile, and even the little everyday moments we used to share. But every day apart reminds me just how much you mean to me.
+</p>
+
+<p>
+Thank you for choosing me, believing in us, and loving me through every season. Two years have gone by so quickly, and if I had the chance to do it all over again, I would still choose you.
+</p>
+
+<p>
+Happy 2nd Anniversary, my love. Here's to all the memories we've made and all the beautiful ones still waiting for us.
+</p>
+
+<div class="signature">
+Forever Yours,<br>
+Rubal ❤️
+</div>
+
+<button onclick="showEnding()">
+One Last Surprise ❤️
+</button>
+
+<div id="finalMessage">
+
+I would choose you...<br><br>
+
+In every lifetime.<br><br>
+
+Every version of me...<br><br>
+
+Would still fall in love with you.<br><br>
+
+❤️ Happy 2nd Anniversary ❤️
+
+</div>
+
+</div>
+
+<script>
+
+function showEnding(){
+
+document.querySelector("button").style.display="none";
+
+document.getElementById("finalMessage").style.display="block";
+
+for(let i=0;i<60;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+heart.style.animationDelay=Math.random()*2+"s";
+
+document.body.appendChild(heart);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
